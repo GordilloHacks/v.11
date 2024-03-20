@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Veterinarian</title>
+</head>
+<body>
+
+  <header>
+    <h1>Veterinaria</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showTab('home')">Home</a></li>
+      <li><a href="#" onclick="showTab('blog')">Blog</a></li>
+      <li><a href="#" onclick="showTab('services')">Services</a></li>
+      <li><a href="#" onclick="showTab('location')">Location</a></li>
+      <li><a href="#" onclick="showTab('admin')">Administración</a></li>
+      <li><a href="#" onclick="showTab('citas')">Gestión de Citas</a></li>
+      <li><a href="#" onclick="showTab('medico')">Médico Veterinario</a></li>
+      <li><a href="#" onclick="showTab('clientes')">Clientes</a></li>
+      <li><a href="#" onclick="showTab('guarderia')">Guardería</a></li>
+      <li><a href="#" onclick="showTab('chatbot')">Chatbot</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="tab-content">
+      <h2>Welcome to Our Veterinary Clinic!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.</p>
+      <button class="button-style">CALL NOW</button>
+    </section>
+    <section id="blog" class="tab-content">
+      <h2>Our Blog</h2>
+      <p>Stay up-to-date with the latest news and tips from our veterinary clinic.</p>
+    </section>
+    <section id="services" class="tab-content">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Routine Check-ups</li>
+        <li>Vaccinations</li>
+        <li>Dental Care</li>
+        <li>Surgery</li>
+        <li>Emergency Care</li>
+      </ul>
+    </section>
+    <section id="location" class="tab-content">
+      <h2>Our Location</h2>
+      <p>123 Main St., Anytown, USA</p>
+      <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <div id="admin" class="tab-content">
+      <h2>Módulo de Administración</h2>
+      <!-- Contenido del módulo de administración -->
+      <!-- Puedes agregar más detalles aquí según sea necesario -->
+    </div>
+
+    <div id="citas" class="tab-content">
+      <h2>Módulo de Gestión de Citas</h2>
+      <!-- Contenido del módulo de gestión de citas -->
+    </div>
+
+    <div id="medico" class="tab-content">
+      <h2>Módulo de Médico Veterinario</h2>
+      <!-- Contenido del módulo de médico veterinario -->
+    </div>
+
+    <div id="clientes" class="tab-content">
+      <h2>Módulo de Clientes</h2>
+      <!-- Contenido del módulo de clientes -->
+    </div>
+
+    <div id="guarderia" class="tab-content">
+      <h2>Módulo de Guardería</h2>
+      <!-- Contenido del módulo de guardería -->
+    </div>
+
+    <div id="chatbot" class="tab-content">
+      <h2>Módulo Extra - Chatbot Simple</h2>
+      <!-- Contenido del módulo de chatbot -->
+    </div>
+
+  </main>
+  <footer>
+    <p>&copy; 2024 Veterinarian. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showTab(tabName) {
+      var tabs = document.getElementsByClassName('tab-content');
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = 'none';
+      }
+      document.getElementById(tabName).style.display = 'block';
+ 
+    }
+  </script>
+
+</body>
+</html>
